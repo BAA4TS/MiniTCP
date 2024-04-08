@@ -20,8 +20,6 @@ Intalaccion descarga ```MiniTCP.hpp``` y despues agregala a tu proyecto
 ```
     
 # Ejemplo de uso
-
-Any additional information goes here
 ```c++
 #include <iostream>
 #include "MiniTCP.hpp"
