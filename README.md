@@ -4,7 +4,6 @@
 Este es un mini proyecto en C++ con el objetivo de crear un mini cliente tcp.
 
 [![AGPL License](https://img.shields.io/badge/C++-Solutions-blue.svg?style=flat&logo=c%2B%2B)](http://www.gnu.org/licenses/agpl-3.0)
-
 [![Uruguay](https://img.shields.io/badge/country-Uruguay-green.svg)](https://en.wikipedia.org/wiki/Uruguay)
 [![Version](https://img.shields.io/badge/version-2.0.1-orange.svg)](https://github.com/tu-repositorio)
 
