@@ -85,17 +85,17 @@ namespace Mini
          *
          * @param Mensaje El mensaje que se va a enviar al servidor.
          *
-         * @return 100 si el mensaje se envió correctamente.
-         *         4 si hubo un error al enviar el mensaje.
+         * @return 0 si el mensaje se envió correctamente.
+         *         1 si hubo un error al enviar el mensaje.
          */
         int EnviarMensaje(const char *Mensaje)
         {
             bytesEnviar = send(SocketCliente, Mensaje, strlen(Mensaje), 0);
             if (bytesEnviar == SOCKET_ERROR)
             {
-                return 4;
+                return 1;
             }
-            return 100;
+            return 0;
         }
 
         /**

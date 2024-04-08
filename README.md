@@ -1,4 +1,3 @@
-
 # MiniTCP (C++)
 
 Este es un mini proyecto en C++ con el objetivo de crear un mini cliente tcp.
@@ -7,19 +6,20 @@ Este es un mini proyecto en C++ con el objetivo de crear un mini cliente tcp.
 [![Uruguay](https://img.shields.io/badge/country-Uruguay-green.svg)](https://en.wikipedia.org/wiki/Uruguay)
 [![Version](https://img.shields.io/badge/version-2.0.1-orange.svg)](https://github.com/tu-repositorio)
 
-
 ![Logo](https://raw.githubusercontent.com/BAA4TS/BAA4TS.github.io/main/src/icono.png)
-
 
 ## Installation
 
-Intalaccion descarga ```MiniTCP.hpp``` y despues agregala a tu proyecto 
+Intalaccion descarga `MiniTCP.hpp` y despues agregala a tu proyecto
 
 ```C++
 #include "MiniTCP.hpp"
 ```
-    
+
 # Ejemplo de uso
+
+Any additional information goes here
+
 ```c++
 #include <iostream>
 #include "MiniTCP.hpp"
@@ -34,7 +34,7 @@ int main() {
     Mini::MIniTCP cliente;
 
     // Conexión al servidor
-    int resultadoConexion = cliente.Connectarse_TCP_AND_DNS(HOST, PORT, 5);
+    int resultadoConexion = cliente.Connectarse_TCP_AND_DNS(HOST, PORT, 10);
     if (resultadoConexion != 0) {
         std::cout << "Error al conectar al servidor: " << resultadoConexion << std::endl;
         return 1;
@@ -51,5 +51,15 @@ int main() {
     std::cout << "Mensaje recibido del servidor: " << mensajeRecibido << std::endl;
 
 
+    // Enviar Mensaje
+    int resultadoMensaje = cliente.EnviarMensaje("Este se enviara al servidor . . .");
+    if (resultadoMensaje == 0){
+        std::cout<<"Mensaje enviado correctamente";
+    }else if (resultadoMensaje == 1)
+    {
+        std::cout << "Error al enviar mensaje";
+    }
+    // Fin
     return 0;
 }
+```
