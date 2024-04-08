@@ -54,10 +54,10 @@ int main() {
     // Enviar Mensaje
     int resultadoMensaje = cliente.EnviarMensaje("Este se enviara al servidor . . .");
     if (resultadoMensaje == 0){
-        std::cout<<"Mensaje enviado correctamente";
+        std::cout<<"Mensaje enviado correctamente" << std::endl;
     }else if (resultadoMensaje == 1)
     {
-        std::cout << "Error al enviar mensaje";
+        std::cout << "Error al enviar mensaje" << std::endl;
     }
     // Fin
     return 0;
